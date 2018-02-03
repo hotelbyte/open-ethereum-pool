@@ -16,7 +16,7 @@
           <i class="fa fa-clock-o"></i> Current Payment: <span>{{format-balance model.stats.pending}}</span><br>
         </div>
         {{/if}}
-        <div style="display: block;"><i class="fa fa-money"></i> Total Paid: <span>{{format-balance model.stats.paid}}</span></div>
+        <div style="display: block;"><i class="far fa-money-bill-alt"></i> Total Paid: <span>{{format-balance model.stats.paid}}</span></div>
       </div>
       <div class="col-md-4 stats">
         {{#if model.stats.lastShare}}
@@ -25,12 +25,12 @@
         </div>
         {{/if}}
         <div style="display: block;"><i class="fa fa-gears"></i> Workers Online: <span>{{format-number model.workersOnline}}</span></div>
-        <div style="display: block;"><i class="fa fa-tachometer"></i> Hashrate (30m): <span>{{format-hashrate model.currentHashrate}}</span></div>
-        <div style="display: block;"><i class="fa fa-tachometer"></i> Hashrate (3h): <span>{{format-hashrate model.hashrate}}</span></div>
+        <div style="display: block;"><i class="fas fa-tachometer-alt"></i> Hashrate (30m): <span>{{format-hashrate model.currentHashrate}}</span></div>
+        <div style="display: block;"><i class="fas fa-tachometer-alt"></i> Hashrate (3h): <span>{{format-hashrate model.hashrate}}</span></div>
       </div>
       <div class="col-md-4 stats">
-        <div style="display: block;"><i class="fa fa-tachometer"></i> Blocks Found: <span>{{format-number model.stats.blocksFound fallback='0'}}</span></div>
-        <div style="display: block;"><i class="fa fa-paper-plane-o"></i> Total Payments: <span>{{format-number model.paymentsTotal}}</span></div>
+        <div style="display: block;"><i class="fas fa-tachometer-alt"></i> Blocks Found: <span>{{format-number model.stats.blocksFound fallback='0'}}</span></div>
+        <div style="display: block;"><i class="far fa-paper-plane"></i> Total Payments: <span>{{format-number model.paymentsTotal}}</span></div>
         <div style="display: block;">
           <i class="fa fa-gears"></i> Your Round Share: <span>{{format-number roundPercent style='percent' maximumFractionDigits='6'}}</span><br/>
           <small>Percent of your contribution to current round.</small>
