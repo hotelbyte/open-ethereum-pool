@@ -30,7 +30,7 @@ module.exports = function(environment) {
       PayoutThreshold: '0.5 Hotelcoin',
 
       // For network hashrate (change for your favourite fork)
-      BlockTime: 14.4
+      BlockTime: 13
     }
   };
 
